@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - Esteban Control</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.7; color: #333; }
+        h1 { color: #1a73e8; border-bottom: 2px solid #1a73e8; padding-bottom: 10px; }
+        h2 { color: #444; margin-top: 30px; font-size: 1.3em; }
+        .date { color: #666; font-style: italic; margin-bottom: 20px; }
+        .highlight { background: #e8f0fe; padding: 15px; border-radius: 8px; margin: 15px 0; border-left: 4px solid #1a73e8; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .no-data { background: #e6f4ea; padding: 15px; border-radius: 8px; border-left: 4px solid #34a853; font-weight: 500; }
+        code { background: #f1f3f4; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+        hr { border: none; border-top: 1px solid #ddd; margin: 30px 0; }
+        .footer { text-align: center; color: #666; font-size: 0.9em; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <h1>Política de Privacidad</h1>
+    <p class="date">Última actualización: 14 de julio de 2026</p>
+    
+    <div class="highlight">
+        <strong>Esteban Control</strong> es una aplicación desarrollada por <strong>novafer-universe</strong> para controlar dispositivos Android TV dentro de su red local.
+    </div>
+
+    <div class="no-data">
+        ✅ <strong>Esta aplicación no recopila, almacena ni comparte datos personales con terceros.</strong>
+    </div>
+
+    <h2>1. Información almacenada localmente</h2>
+    <p>La única información que maneja la aplicación se almacena <strong>exclusivamente en su dispositivo Android</strong> y nunca se transmite fuera de él:</p>
+    <ul>
+        <li><strong>Dirección IP y nombre</strong> del dispositivo Android TV seleccionado</li>
+        <li><strong>Estado de emparejamiento</strong> con el dispositivo TV</li>
+        <li><strong>Configuración inicial</strong> de la conexión</li>
+        <li><strong>Certificados de seguridad TLS</strong> generados localmente para comunicación cifrada (keystore)</li>
+    </ul>
+
+    <h2>2. Cómo usamos la información</h2>
+    <p>Toda la información mencionada se utiliza exclusivamente para:</p>
+    <ul>
+        <li>Descubrir y conectar con su Android TV en la red local</li>
+        <li>Mantener el estado de emparejamiento entre sesiones</li>
+        <li>Establecer comunicación segura mediante TLS</li>
+    </ul>
+
+    <h2>3. Permisos de la aplicación</h2>
+    <p>La aplicación solicita los siguientes permisos exclusivamente para su funcionamiento:</p>
+    <ul>
+        <li><code>INTERNET</code>: Para abrir conexiones TLS con su TV en la red local</li>
+        <li><code>NEARBY_WIFI_DEVICES</code>: Para descubrir dispositivos Wi-Fi cercanos (Android 13+). Marcado como <code>neverForLocation</code></li>
+        <li><code>ACCESS_NETWORK_STATE</code> / <code>ACCESS_WIFI_STATE</code>: Para verificar conectividad de red</li>
+        <li><code>CHANGE_WIFI_MULTICAST_STATE</code>: Para descubrimiento de servicios mDNS en la red local</li>
+    </ul>
+
+    <h2>4. Bibliotecas externas</h2>
+    <p>La aplicación utiliza las siguientes bibliotecas de código abierto exclusivamente para funcionalidad local:</p>
+    <ul>
+        <li><strong>Protobuf</strong>: Para serialización del protocolo de comunicación con la TV</li>
+        <li><strong>Bouncy Castle</strong>: Para operaciones criptográficas TLS locales</li>
+    </ul>
+    <p>Ninguna de estas bibliotecas transmite datos a servidores externos.</p>
+
+    <h2>5. Seguridad</h2>
+    <p>La comunicación con su Android TV utiliza <strong>TLS (Transport Layer Security)</strong> con certificados generados y almacenados localmente en su dispositivo. No transmitimos información por canales no cifrados ni a servidores externos.</p>
+
+    <h2>6. Terceros y servicios externos</h2>
+    <p>Esta aplicación <strong>no utiliza</strong> ni se conecta a:</p>
+    <ul>
+        <li>Servicios de analytics (Google Analytics, Firebase Analytics, etc.)</li>
+        <li>Servicios de publicidad</li>
+        <li>Servicios de telemetría o crash reporting (Firebase Crashlytics, etc.)</li>
+        <li>Servidores propios o de terceros</li>
+    </ul>
+
+    <h2>7. Retención y eliminación de datos</h2>
+    <p>Los datos se almacenan únicamente en su dispositivo. Puede eliminarlos en cualquier momento:</p>
+    <ul>
+        <li>Desde la configuración de Android: <em>Ajustes > Aplicaciones > Esteban Control > Almacenamiento > Borrar datos</em></li>
+        <li>Desinstalando la aplicación</li>
+    </ul>
+
+    <h2>8. Cambios en esta política</h2>
+    <p>Podemos actualizar esta política ocasionalmente. Cualquier cambio se publicará en esta página con la fecha de actualización correspondiente.</p>
+
+    <h2>9. Contacto</h2>
+    <p>Si tiene preguntas sobre esta política de privacidad, puede contactarnos en:</p>
+    <p>📧 <strong>novafer.oficial@gmail.com</strong></p>
+    <p>Desarrollador: <strong>novafer-universe</strong></p>
+
+    <hr>
+    <div class="footer">
+        <p>© 2026 novafer-universe. Todos los derechos reservados.</p>
+        <p><em>Esta política cumple con los requisitos de Google Play para aplicaciones que no recopilan datos personales.</em></p>
+    </div>
+</body>
+</html>
